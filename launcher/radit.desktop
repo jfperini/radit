@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment[es]=Automatizador para emisoras de radio.
+Comment=Automatizador para emisoras de radio.
+Exec=radit
+GenericName[es]=Radit
+GenericName=Radit
+Icon=/usr/share/pixmaps/radit.svg
+Name[es]=Radit
+Name=Radit
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Categories=AudioVideo;Player;Music;Multimedia;Qt;

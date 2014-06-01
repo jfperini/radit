@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmPlayer</class>
+ <widget class="QMainWindow" name="FrmPlayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>416</width>
+    <height>811</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="radit.qrc">
+    <normaloff>:/newPrefix/iconos/radit.ico</normaloff>:/newPrefix/iconos/radit.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 240, 240);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 48, 58);
+selection-background-color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>3</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(32, 39, 47);
+
+     border-radius:6px;
+   border: 1px solid #000000;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="0">
+           <widget class="QVUMeter" name="Vumeter">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>42</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>VU Meter</string>
+            </property>
+            <property name="whatsThis">
+             <string>VU Meter</string>
+            </property>
+            <property name="colorBg">
+             <color>
+              <red>121</red>
+              <green>136</green>
+              <blue>177</blue>
+             </color>
+            </property>
+            <property name="leftValue">
+             <double>70.000000000000000</double>
+            </property>
+            <property name="rightValue">
+             <double>87.000000000000000</double>
+            </property>
+            <property name="minValue">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="maxValue">
+             <double>100.000000000000000</double>
+            </property>
+            <property name="dimValue" stdset="0">
+             <number>9</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="Label">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>18</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(7, 250, 242);
+   border: 0px solid #4a9afd;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <property name="text">
+               <string>00:00:00.000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="Label2">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+
+  border: 0px solid #4a9afd;</string>
+              </property>
+              <property name="text">
+               <string>00:00</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>83</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="0" colspan="3">
+           <widget class="QLabel" name="label_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>3</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(85, 255, 127);
+  border: 0px solid #4a9afd;</string>
+            </property>
+            <property name="text">
+             <string>Rds---------------------------------------------------</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+     background-color: rgb(34, 34, 34);
+    color: rgb(7, 250, 242);
+	selection-color: rgb(7, 250, 242);
+
+   selection-background-color: rgb(34, 34, 34);
+	
+ }
+
+ QComboBox QAbstractItemView {
+     
+	background-color: rgb(34, 34, 34);
+	color: rgb(255, 255, 255);
+
+	
+	selection-color: rgb(255, 255, 255);
+
+	selection-background-color: #5d83bf;
+
+ }</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Normal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Manual</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Repetir</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>107</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 48, 58);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0" colspan="5">
+          <widget class="QSlider" name="Slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> QSlider::groove:horizontal {
+     border: 1px solid #999999;
+     height: 8px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+   
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #5aa3fd, stop: 1 #1f406a);
+     border: 1px solid #5c5c5c;
+     width: 18px;
+     margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+     border-radius: 3px;
+ }
+</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="BtnPlay">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+
+    </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/play.png</normaloff>:/newPrefix/iconos/player/play.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="BtnPause">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+
+    </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/pause.png</normaloff>:/newPrefix/iconos/player/pause.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="BtnStop">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+
+    </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/stop.png</normaloff>:/newPrefix/iconos/player/stop.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="BtnAtras">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/retroceso.png</normaloff>:/newPrefix/iconos/player/retroceso.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="BtnAlante">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/avance.png</normaloff>:/newPrefix/iconos/player/avance.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QPushButton" name="BtnLoop">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/loop.png</normaloff>:/newPrefix/iconos/player/loop.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QPushButton" name="BtnPurge">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/purge.png</normaloff>:/newPrefix/iconos/player/purge.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="BtnPisador">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113636, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(187, 221, 255, 255));
+
+ border: 2px solid #2f4678;
+
+     border-radius:6px;
+</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/newPrefix/iconos/player/pisador.png</normaloff>:/newPrefix/iconos/player/pisador.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>106</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="Lista">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>7</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(32, 39, 47);
+
+	
+	color: rgb(7, 250, 242);
+	</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>397</width>
+         <height>530</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>416</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+  
+	background-color: rgb(34, 34, 34);
+	color: rgb(255, 255, 255);
+ }
+
+ QMenuBar::item {
+     spacing: 3px; /* spacing between menu bar items */
+     padding: 1px 4px;
+     background: transparent;
+     border-radius: 4px;
+ }
+
+ QMenuBar::item:selected { /* when selected using mouse or keyboard */
+     background: #5d83bf;
+ }
+
+ QMenuBar::item:pressed {
+     background: #5d83bf;
+ }
+Customiz</string>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true">
+ QMenu {
+  background-color: rgb(34, 34, 34);
+color: rgb(255, 255, 255);
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+   /*  background-color: #654321;*/
+
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+For a mor
+</string>
+    </property>
+    <property name="title">
+     <string>&amp;Fichero</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_Como"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecent"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="styleSheet">
+     <string notr="true">
+ QMenu {
+  background-color: rgb(34, 34, 34);
+color: rgb(255, 255, 255);
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+   /*  background-color: #654321;*/
+
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+For a mor
+ </string>
+    </property>
+    <property name="title">
+     <string>&amp;Editar</string>
+    </property>
+    <addaction name="actionCortar"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionPegar"/>
+    <addaction name="actionBorrar"/>
+   </widget>
+   <widget class="QMenu" name="menuLista">
+    <property name="styleSheet">
+     <string notr="true">
+ QMenu {
+  background-color: rgb(34, 34, 34);
+color: rgb(255, 255, 255);
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+   /*  background-color: #654321;*/
+
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+For a mor
+ </string>
+    </property>
+    <property name="title">
+     <string>Lista</string>
+    </property>
+    <widget class="QMenu" name="menuComandos">
+     <property name="title">
+      <string>Comandos</string>
+     </property>
+     <addaction name="actionAddStop"/>
+    </widget>
+    <widget class="QMenu" name="menuHTH">
+     <property name="title">
+      <string>HTH</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/newPrefix/iconos/menu/hth.png</normaloff>:/newPrefix/iconos/menu/hth.png</iconset>
+     </property>
+     <addaction name="actionAddHora"/>
+     <addaction name="actionAddTemperatura"/>
+     <addaction name="actionAddHumedad"/>
+    </widget>
+    <addaction name="actionAddPista"/>
+    <addaction name="menuComandos"/>
+    <addaction name="menuHTH"/>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="styleSheet">
+     <string notr="true">
+ QMenu {
+  background-color: rgb(34, 34, 34);
+color: rgb(255, 255, 255);
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+   /*  background-color: #654321;*/
+
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+For a mor
+ </string>
+    </property>
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <widget class="QMenu" name="menuBarraHerramientas">
+     <property name="title">
+      <string>Barra de herramientas</string>
+     </property>
+     <addaction name="actionFichero"/>
+     <addaction name="actionLista"/>
+    </widget>
+    <addaction name="menuBarraHerramientas"/>
+   </widget>
+   <widget class="QMenu" name="menuHerramientas">
+    <property name="styleSheet">
+     <string notr="true">
+ QMenu {
+  background-color: rgb(34, 34, 34);
+color: rgb(255, 255, 255);
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+   /*  background-color: #654321;*/
+
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+For a mor
+ </string>
+    </property>
+    <property name="title">
+     <string>Herramientas</string>
+    </property>
+    <addaction name="actionPreferencias"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuVer"/>
+   <addaction name="menuLista"/>
+   <addaction name="menuHerramientas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(165, 165, 165);</string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QToolBar {
+      background-color: rgb(32, 39, 47);
+
+      
+     }
+
+
+QToolButton { /* all types of tool button */
+     background-color: rgb(32, 39, 47);
+
+     }
+
+QToolButton:hover {
+  background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }
+
+ </string>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="separator"/>
+   <addaction name="actionBorrar"/>
+   <addaction name="actionCortar"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionPegar"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar2">
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QToolBar {
+      background-color: rgb(32, 39, 47);
+
+      
+     }
+
+
+QToolButton { /* all types of tool button */
+     background-color: rgb(32, 39, 47);
+
+     }
+
+QToolButton:hover {
+  background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(129, 166, 226, 255), stop:1 rgba(93, 131, 190, 255));
+ }</string>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddPista"/>
+   <addaction name="actionAddHora"/>
+   <addaction name="actionAddTemperatura"/>
+   <addaction name="actionAddHumedad"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/filenew.png</normaloff>:/newPrefix/iconos/menu/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/fileopen.png</normaloff>:/newPrefix/iconos/menu/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/filesave.png</normaloff>:/newPrefix/iconos/menu/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="text">
+    <string>Guardar Como...</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/cut.png</normaloff>:/newPrefix/iconos/menu/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/copy.png</normaloff>:/newPrefix/iconos/menu/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionRecent">
+   <property name="text">
+    <string>Recent</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/paste.png</normaloff>:/newPrefix/iconos/menu/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionBorrar">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/delete.png</normaloff>:/newPrefix/iconos/menu/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Borrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionAddPista">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/añadir.png</normaloff>:/newPrefix/iconos/menu/añadir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Añadir pista...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionAddStop">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/player/stop.png</normaloff>:/newPrefix/iconos/player/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Añadir comando stop</string>
+   </property>
+  </action>
+  <action name="actionAddHora">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/relog.png</normaloff>:/newPrefix/iconos/menu/relog.png</iconset>
+   </property>
+   <property name="text">
+    <string>Añadir locución de hora</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionAddTemperatura">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/sol.png</normaloff>:/newPrefix/iconos/menu/sol.png</iconset>
+   </property>
+   <property name="text">
+    <string>Añadir locución de temperatura</string>
+   </property>
+  </action>
+  <action name="actionAddHumedad">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/nube.png</normaloff>:/newPrefix/iconos/menu/nube.png</iconset>
+   </property>
+   <property name="text">
+    <string>Añadir locución humedad</string>
+   </property>
+  </action>
+  <action name="actionFichero">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fichero</string>
+   </property>
+  </action>
+  <action name="actionLista">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Lista</string>
+   </property>
+  </action>
+  <action name="actionPreferencias">
+   <property name="icon">
+    <iconset resource="radit.qrc">
+     <normaloff>:/newPrefix/iconos/menu/preferencias.png</normaloff>:/newPrefix/iconos/menu/preferencias.png</iconset>
+   </property>
+   <property name="text">
+    <string>Preferencias</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVUMeter</class>
+   <extends>QWidget</extends>
+   <header>qvumeter.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="radit.qrc"/>
+ </resources>
+ <connections/>
+</ui>

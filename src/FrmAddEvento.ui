@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmAddEvento</class>
+ <widget class="QDialog" name="FrmAddEvento">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Añadir evento</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(33, 48, 58);
+</string>
+  </property>
+  <widget class="QFrame" name="FrameDias">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>250</y>
+     <width>97</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+   background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+
+ }
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: rgb(27, 128, 217);
+  border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Días</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>77</width>
+      <height>172</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCheckBox" name="BtnLunes">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Lunes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnMartes">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Martes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnMiercoles">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Miercoles</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnJueves">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Jueves</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnViernes">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Viernes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnSabado">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Sábado</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="BtnDomingo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Domingo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BtnTodos">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+       </property>
+       <property name="text">
+        <string>Invertir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="FrameTipo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+ }
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>441</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: rgb(27, 128, 217);
+  border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Tipo de evento</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="ComboEvento">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>301</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Fichero</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Carpeta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Locución Hora</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Locución Temperatura</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Locución Humedad</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Radio On-line</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QFrame" name="FrameTipoFichero">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+  background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+ }
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="LUrl">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>2</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BtnUrl">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="FrameTipoRadio">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+  background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+ }
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="LUrlRadio">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>2</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BtnAddRadio">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LNombreRadio">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>2</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LConexion">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>2</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1</y>
+     <width>431</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="FramePrioridad">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+   background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+
+ }
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QRadioButton" name="RadioUnaVez">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>36</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Una vez al día</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="RadioCadaHora">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>62</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Reproducir cada hora</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="RadioOtrasHoras">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>88</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Otras horas...</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>271</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+ background-color: rgb(27, 128, 217);
+   border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Periodicidad</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="FrameComportamiento">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+   background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+
+ }
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="ComboComportamiento">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>31</y>
+         <width>181</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Retardado</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Inmediato</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QCheckBox" name="ChecEspera">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Espera máxima</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="SpinEspera">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>51</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>5</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>90</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Minutos</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>271</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+
+ background-color: rgb(27, 128, 217);
+   border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Comportamiento</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QFrame" name="FrameFecha">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+  background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+ }
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QDateEdit" name="DateFechaInicio">
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>58</y>
+         <width>85</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="DateExpiracion">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>138</y>
+         <width>85</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="TimeHoraInicio">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>58</y>
+         <width>73</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+
+</string>
+       </property>
+       <property name="displayFormat">
+        <string>HH:mm:ss</string>
+       </property>
+      </widget>
+      <widget class="QTimeEdit" name="TimeExpiracion">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>138</y>
+         <width>73</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="displayFormat">
+        <string>HH:mm:ss</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> background-color: rgb(27, 128, 217);
+  border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Fecha y hora</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="ChecExpiracion">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>114</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Expiración</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>34</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Fecha y hora de inicio</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="FramePrioridad_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>211</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+   background-color: rgb(32, 39, 47);
+   border: 1px solid black;
+color: rgb(255, 255, 255);
+
+
+
+ }
+
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>271</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+
+ background-color: rgb(27, 128, 217);
+   border: 1px solid black;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Prioridad</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>191</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="RadioPrioridadAlta">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="text">
+            <string>Alta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="RadioPrioridadBaja">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="text">
+            <string>Baja</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>460</y>
+     <width>181</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="BtnAceptar">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+      </property>
+      <property name="text">
+       <string>Aceptar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="BtnCancelar">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+      </property>
+      <property name="text">
+       <string>Cancelar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>FrameDias</zorder>
+  <zorder>FrameTipo</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

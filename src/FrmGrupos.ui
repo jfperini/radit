@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmGrupos</class>
+ <widget class="QMainWindow" name="FrmGrupos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>131</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rotaciones</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(33, 48, 58);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="ListaGrupos" name="Lista">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>7</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+background-color: rgb(32, 39, 47);
+
+	
+	color: rgb(7, 250, 242);
+	
+	gridline-color: rgb(117, 125, 164);
+
+}
+
+QHeaderView::section
+{
+spacing: 10px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #5aa3fd, stop: 1 #1f406a);
+color: white;
+border: 1px solid black;
+margin: 1px;
+text-align: right;
+font-family: arial;
+font-size:12px;
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ContiguousSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>16</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>16</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Título</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Duración</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignRight|AlignVCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Segundos</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>url</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PTiempo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PInUrl</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>POutUrl</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListaGrupos</class>
+   <extends>QTableWidget</extends>
+   <header location="global">ListaGrupos.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

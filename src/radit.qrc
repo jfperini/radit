@@ -1,0 +1,75 @@
+<RCC>
+    <qresource prefix="/general">
+        <file>iconos/eventos/onair.png</file>
+	<file>iconos/menu/añadir.png</file>
+        <file>iconos/menu/paleta.png</file>
+        <file>iconos/cubo copy.png</file>
+        <file>iconos/menu/acercade.png</file>
+        <file>iconos/menu/log.png</file>
+        <file>iconos/menu/logo.png</file>
+        <file>iconos/menu/aux2.png</file>
+        <file>iconos/menu/aux1.png</file>
+        <file>iconos/ficheros/tanda.png</file>
+        <file>iconos/ficheros/rot.png</file>
+        <file>iconos/ficheros/lata.png</file>
+        <file>iconos/menu/voice.png</file>
+        <file>iconos/logo.png</file>
+        <file>iconos/menu/prefer.png</file>
+        <file>iconos/player/ico.png</file>
+        <file>iconos/menu/eventos.png</file>
+        <file>iconos/menu/player.png</file>
+        <file>iconos/menu/preferencias.png</file>
+        <file>iconos/menu/hth.png</file>
+        <file>iconos/menu/nube.png</file>
+        <file>iconos/menu/sol.png</file>
+        <file>iconos/menu/relog.png</file>
+        <file>iconos/menu/cut.png</file>
+        <file>iconos/menu/delete.png</file>
+        <file>iconos/menu/copy.png</file>
+        <file>iconos/menu/paste.png</file>
+        <file>iconos/menu/fileopen.png</file>
+        <file>iconos/menu/filenew.png</file>
+        <file>iconos/player/purge.png</file>
+        <file>iconos/menu/filesave.png</file>
+        <file>iconos/player/loop.png</file>
+        <file>iconos/player/parar.png</file>
+        <file>iconos/player/pisador.png</file>
+        <file>iconos/player/avance.png</file>
+        <file>iconos/player/retroceso.png</file>
+        <file>iconos/player/next.png</file>
+        <file>iconos/player/stop.png</file>
+        <file>iconos/player/pause.png</file>
+        <file>iconos/player/play.png</file>
+        <file>iconos/radit.ico</file>
+    </qresource>
+    <qresource prefix="/numeros">
+        <file>iconos/numeros/n3.png</file>
+        <file>iconos/numeros/n4.png</file>
+        <file>iconos/numeros/n5.png</file>
+        <file>iconos/numeros/n6.png</file>
+        <file>iconos/numeros/n7.png</file>
+        <file>iconos/numeros/n8.png</file>
+        <file>iconos/numeros/n9.png</file>
+        <file>iconos/numeros/n2.png</file>
+        <file>iconos/numeros/n1.png</file>
+    </qresource>
+    <qresource prefix="/Eventos">
+        <file>iconos/eventos/export .png</file>
+        <file>iconos/eventos/import.png</file>
+        <file>iconos/eventos/Add.png</file>
+        <file>iconos/eventos/edit.png</file>
+        <file>iconos/eventos/delete.png</file>
+        <file>iconos/eventos/expirados.png</file>
+        <file>iconos/eventos/tabadd.png</file>
+        <file>iconos/eventos/tabdelete.png</file>
+    </qresource>
+    <qresource prefix="/ficheros">
+        <file>iconos/ficheros/online.png</file>
+        <file>iconos/ficheros/wav.png</file>
+        <file>iconos/ficheros/carpeta.png</file>
+        <file>iconos/ficheros/flac.png</file>
+        <file>iconos/ficheros/mp3.png</file>
+        <file>iconos/ficheros/ogg.png</file>
+        <file>iconos/ficheros/wma.png</file>
+    </qresource>
+</RCC>

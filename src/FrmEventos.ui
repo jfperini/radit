@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmEventos</class>
+ <widget class="QMainWindow" name="FrmEventos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>892</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Eventos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="radit.qrc">
+    <normaloff>:/general/iconos/player/ico.png</normaloff>:/general/iconos/player/ico.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(33, 48, 58);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(32, 39, 47);
+
+     border-radius:6px;
+   border: 1px solid #000000;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="LFecha">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(92, 135, 206);
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+
+border-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="BtnHora">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border-color: rgb(255, 255, 255);
+     border-radius:4px;
+     background-color: rgb(92, 135, 206);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LHora">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(92, 135, 206);
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+border-color: rgb(255, 255, 255);
+  border-radius:4px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="BtnTemp">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border-color: rgb(255, 255, 255);
+     border-radius:4px;
+     background-color: rgb(92, 135, 206);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/menu/sol.png</normaloff>:/general/iconos/menu/sol.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LTemperatura">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(92, 135, 206);
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+border-color: rgb(255, 255, 255);
+  border-radius:4px;</string>
+           </property>
+           <property name="text">
+            <string>0 C</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="BtnHume">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border-color: rgb(255, 255, 255);
+     border-radius:4px;
+     background-color: rgb(92, 135, 206);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }</string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/menu/nube.png</normaloff>:/general/iconos/menu/nube.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LHumedad">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(92, 135, 206);
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+border-color: rgb(255, 255, 255);
+  border-radius:4px;</string>
+           </property>
+           <property name="text">
+            <string>0 %</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 48, 58);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="BtnActualizar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>Actualizar eventos</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+    </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/player/loop.png</normaloff>:/general/iconos/player/loop.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="BtnStart">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>Activar eventos</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+
+
+QPushButton:checked {
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/menu/eventos.png</normaloff>:/general/iconos/menu/eventos.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="BtnEventos">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>Planificar eventos</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+    </string>
+           </property>
+           <property name="icon">
+            <iconset resource="radit.qrc">
+             <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="LAviso">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+background-color: rgb(33, 48, 58);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="radit.qrc">:/general/iconos/eventos/onair.png</pixmap>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(92, 135, 206);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+
+border-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Eventos próximos</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="ListaEventos" name="w_Lista">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableView {
+background-color: rgb(32, 39, 47);
+
+	
+	color: rgb(7, 250, 242);
+	
+	gridline-color: rgb(117, 125, 164);
+
+}
+
+QHeaderView::section
+{
+spacing: 10px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #5aa3fd, stop: 1 #1f406a);
+color: white;
+border: 1px solid black;
+margin: 1px;
+text-align: right;
+font-family: arial;
+font-size:12px;
+}
+</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::ContiguousSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>16</number>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>16</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string/>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Hora</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Comienzo</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Título</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Duración</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignRight|AlignVCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Segundos</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>url</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>cod</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>fechahora</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="LUrl">
+          <property name="styleSheet">
+           <string notr="true">  border: 2px solid #000000;
+
+     border-radius:8px;
+background-color: rgb(255, 255, 255);
+selection-background-color: rgb(14, 45, 158);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeView" name="TExplore">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(32, 39, 47);
+
+	
+	color: rgb(7, 250, 242);
+color: rgb(250, 250, 250);
+	
+	gridline-color: rgb(117, 125, 164);
+
+</string>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="dragDropMode">
+           <enum>QAbstractItemView::DragOnly</enum>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::ContiguousSelection</enum>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListaEventos</class>
+   <extends>QTableWidget</extends>
+   <header location="global">ListaEventos.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="radit.qrc"/>
+ </resources>
+ <connections/>
+</ui>

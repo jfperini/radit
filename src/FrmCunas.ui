@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmCunas</class>
+ <widget class="QDialog" name="FrmCunas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>28</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>20</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>28</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">  background-color: rgb(32, 39, 47);
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="CunaButton" name="Btn1">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n1.png</normaloff>:/numeros/iconos/numeros/n1.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn2">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 2</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n2.png</normaloff>:/numeros/iconos/numeros/n2.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn3">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n3.png</normaloff>:/numeros/iconos/numeros/n3.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn4">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n4.png</normaloff>:/numeros/iconos/numeros/n4.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn5">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n5.png</normaloff>:/numeros/iconos/numeros/n5.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn6">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n6.png</normaloff>:/numeros/iconos/numeros/n6.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn7">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n7.png</normaloff>:/numeros/iconos/numeros/n7.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn8">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n8.png</normaloff>:/numeros/iconos/numeros/n8.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="CunaButton" name="Btn9">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+     border: 1px solid #000000;
+     border-radius:4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, stop: 1 #dadbde);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ }
+
+ QPushButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QPushButton:flat {
+     border: none; /* no border for a flat push button */
+ }
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+ QPushButton:default {
+     border-color: navy; /* make the default button prominent */
+ }
+</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/numeros/iconos/numeros/n9.png</normaloff>:/numeros/iconos/numeros/n9.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="ComboPagina">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     border: 1px solid #000000;
+     border-radius:4px;
+background-color: rgb(38, 106, 208);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ 
+color: rgb(255, 255, 0);
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="BtnEditar">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Auxiliar 1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">     border: 1px solid #000000;
+     border-radius:4px;
+background-color: rgb(38, 106, 208);
+     min-width: 30px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+ 
+color: rgb(255, 255, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>Editar</string>
+     </property>
+     <property name="icon">
+      <iconset resource="radit.qrc">
+       <normaloff>:/general/iconos/menu/preferencias.png</normaloff>:/general/iconos/menu/preferencias.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CunaButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">micelanea/CunaButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="radit.qrc"/>
+ </resources>
+ <connections/>
+</ui>
